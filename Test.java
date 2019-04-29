@@ -62,16 +62,89 @@ public class Test {
         }
     }
     /**
-    * print muti-tabel
-    *
+    * 打印乘法表 并在5处跳出
     */
     public void getForth(){
-        for (int i = 1;i<=9 ;i++ ) {
+        LOOP : for (int i = 1;i<=9 ;i++ ) {
             for (int j = 1;j<=i ;j++ ) {
                 System.out.print(" "+j+"*"+i+"="+i*j);
+                if (j==5) {
+                    break LOOP;
+                }
             }
             System.out.println();
         }
+    }
+    /**
+    * 打印菱形
+    */
+    public void getFifth(){
+        System.out.println();
+        for (int row = 1; row<=10;row++ ) {
+            for (int j = 1; j<=10-row;j++ ) {
+               System.out.print(" "); 
+            }
+            for (int i  = 1; i<=2*row-1;i = i+1 ) {
+                System.out.print("*");
+            }
+            System.out.println("");           
+        }
+        for (int row = 9; row>=1;row--) {
+            for (int j = 1; j<=10-row;j++ ) {
+               System.out.print(" "); 
+            }
+            for (int i  = 1; i<=2*row-1;i = i+1 ) {
+                System.out.print("*");
+            }
+            System.out.println("");           
+        }
+        System.out.println("");
+    }
+    /**
+    * 打印1+1/2！+1/3！+.....+1/20！
+    */
+    public void getSixth(){
+        int num = 1;
+        double sum = 0;
+        while(num<=20){
+            int i = num;
+            long result = 1;
+            while(i>0){
+                result = result*i;
+                i--;
+            }
+            //System.out.println(result);
+            sum = sum + (double)1/result;
+            num++;
+        }
+        //return sum
+        System.out.println(sum);
+        //System.out.println((double)1/10);
+    }
+    /**
+    *对字符串进行操作
+    */
+    public void getSeventh(){
+        String str = "I am Iroy man .";
+        System.out.println(str.indexOf("I"));
+        System.out.println(str.lastIndexOf("m"));
+        System.out.println(str.charAt(6));
+        System.out.println(str.substring(3));
+        System.out.println(str.substring(3,8));
+        System.out.println(str.trim());//去除首尾字符串的空格
+        System.out.println(str.replace(" ",""));      
+        System.out.println(str.startsWith("I"));
+        System.out.println(str.endsWith("."));
+
+        String Tom = "Jerry";
+        String John = "Jerry";
+        System.out.println(Tom==John);      
+
+        String s1 = new String("Go to bedroom");
+        String s2 = new String("Go to bedroom");
+        System.out.println(s1==s2);      
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equalsIgnoreCase(s2));
     }
     public static void main(String[] args) {
         
@@ -80,5 +153,8 @@ public class Test {
         testOne.getTestSecond();
         testOne.getTestThird();
         testOne.getForth();
+        testOne.getFifth();
+        testOne.getSixth();
+        testOne.getSeventh();
     }
 }
