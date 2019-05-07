@@ -1,0 +1,24 @@
+package main;
+
+public class BinaryNode<T> {
+
+	public T data;
+	public BinaryNode<T> next;
+	public BinaryNode(T data,BinaryNode<T> next) {
+		this.data= data;
+		this.next = next;
+	}
+	public BinaryNode() {
+		this(null, null);
+	}
+	
+	@Override
+	public String toString() {
+		return this.data.toString();
+	}
+	public static void main(String[] args) {
+		Node< Integer> node = new Node<Integer>();
+
+	}
+
+}
