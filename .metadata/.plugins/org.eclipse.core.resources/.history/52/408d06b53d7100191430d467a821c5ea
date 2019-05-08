@@ -149,24 +149,6 @@ public class BinaryTree<T> {
 		}
 		System.out.println();
 	}
-	/**
-	 *使用层次遍历出一棵二叉树的所有左节点 
-	 */
-	public void leftByLevelorder() {
-		Queue<BinaryNode<T>> que = new LinkedList<BinaryNode<T>>();
-		BinaryNode<T> p = this.root;
-		while (p!=null) {
-			if (p.left!=null) {
-				System.out.print(p.left.data.toString()+" ");
-				que.add(p.left);
-			}
-			if (p.right!=null) {
-				que.add(p.right);
-			}
-			p = que.poll();
-		}
-		System.out.println();
-	}
 	public static void main(String[] args) {
 		
 //		int a = 5;
@@ -186,6 +168,5 @@ public class BinaryTree<T> {
 //		myTree.preorder();
 //		myTree.preorderTraverse();
 		myTree.levelorder();
-		myTree.leftByLevelorder();
 	}
 }

@@ -1,7 +1,5 @@
 package main;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class BinaryTree<T> {
@@ -130,43 +128,6 @@ public class BinaryTree<T> {
 			
 		}
 	}
-	/**
-	 * 使用队列对一棵二叉树进行层次遍历 
-	 *
-	 */
-	public void levelorder() {
-		Queue<BinaryNode<T>> que = new LinkedList<BinaryNode<T>>();
-		BinaryNode<T> p = this.root;
-		while (p!=null) {
-			System.out.print(p.data.toString()+" ");
-			if (p.left!=null) {
-				que.add(p.left);
-			}
-			if (p.right!=null) {
-				que.add(p.right);
-			}
-			p = que.poll();
-		}
-		System.out.println();
-	}
-	/**
-	 *使用层次遍历出一棵二叉树的所有左节点 
-	 */
-	public void leftByLevelorder() {
-		Queue<BinaryNode<T>> que = new LinkedList<BinaryNode<T>>();
-		BinaryNode<T> p = this.root;
-		while (p!=null) {
-			if (p.left!=null) {
-				System.out.print(p.left.data.toString()+" ");
-				que.add(p.left);
-			}
-			if (p.right!=null) {
-				que.add(p.right);
-			}
-			p = que.poll();
-		}
-		System.out.println();
-	}
 	public static void main(String[] args) {
 		
 //		int a = 5;
@@ -183,9 +144,7 @@ public class BinaryTree<T> {
 		myTree.insert(myTree.root.right, "X",false);
 		myTree.insert("Z");
 		System.out.println(myTree.toString());
-//		myTree.preorder();
-//		myTree.preorderTraverse();
-		myTree.levelorder();
-		myTree.leftByLevelorder();
+		myTree.preorder();
+		myTree.preorderTraverse();
 	}
 }

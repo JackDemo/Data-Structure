@@ -157,7 +157,7 @@ public class BinaryTree<T> {
 		BinaryNode<T> p = this.root;
 		while (p!=null) {
 			if (p.left!=null) {
-				System.out.print(p.left.data.toString()+" ");
+				System.out.print(p.data.toString()+" ");
 				que.add(p.left);
 			}
 			if (p.right!=null) {
