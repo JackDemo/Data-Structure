@@ -1,5 +1,6 @@
 ### 用于复习数据结构基础知识
-**使用Java实现的ecplise项目**  
+**使用Java实现的ecplise项目**
+（请在使用时打开JavaTest/doc/index.html查看使用类、方法、参数、返回值等的说明）
 * MyList 线性表
 * SortedMyList 顺序表
 * BinaryTree 二叉树
