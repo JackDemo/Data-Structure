@@ -50,8 +50,6 @@ public class ThreadBinaryTree<T> {
 	}
 	/**
 	 * 返回中序线索二叉树中序遍历的后继节点
-	 * @param p 表示二叉树节点 
-	 * @return 二叉树节点p在中序遍历中的后继节点
 	 */
 	public ThreadBinaryNode<T> inNext(ThreadBinaryNode<T> p) {
 		if (p.rtag) {
@@ -80,8 +78,6 @@ public class ThreadBinaryTree<T> {
 	}
 	/**
 	 * 返回中序线索二叉树中序遍历的前驱节点 
-	 * @param p 表示二叉树节点 
-	 * @return 二叉树节点p在中序遍历中的前驱节点
 	 */
 	public ThreadBinaryNode<T> inPre(ThreadBinaryNode<T> p) {
 		if (p.ltag) {
@@ -95,8 +91,6 @@ public class ThreadBinaryTree<T> {
 	}
 	/**
 	 * 返回先序遍历情况下中序线索树的后继节点 
-	 * @param p 表示二叉树节点 
-	 * @return 二叉树节点p在先序遍历中的后继节点
 	 */
 	public ThreadBinaryNode<T> preNext(ThreadBinaryNode<T> p) {
 		if (!p.ltag) {
