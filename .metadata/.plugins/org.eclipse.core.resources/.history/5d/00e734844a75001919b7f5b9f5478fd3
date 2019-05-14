@@ -1,0 +1,42 @@
+package main;
+
+import javax.management.openmbean.OpenDataException;
+
+public class ExpressionBinaryTree extends BinaryTree<ExpData> {
+
+	public ExpressionBinaryTree() {
+		super();
+	}
+	public ExpressionBinaryTree(String prelist) {
+		this.root = create(prelist);
+	}
+	private int i = 0;
+	private BinaryNode<ExpData> create(String prelist) {
+		BinaryNode<ExpData> p = null;
+		if(i < prelist.length()) {
+			char ch  = prelist.charAt(i);
+			if (ch>='0'&&ch<='9') {
+				int value = 0;
+				while (i<prelist.length()&&ch!=' ') {
+					
+				}
+			}
+//			i++;
+//			if (elem!=null	) {
+//				p = new BinaryNode<ExpData>(new ExpData(value, oper));
+//				p.left = create(prelist);
+//				p.right = create(prelist);
+//				
+//			}
+		
+		}
+		return p;
+		
+		return null;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}
