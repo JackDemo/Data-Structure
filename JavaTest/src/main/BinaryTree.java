@@ -175,7 +175,7 @@ public class BinaryTree<T> {
 //		System.out.println(a);
 		
 		String[] prelist = {"A","B","D",null,"G",null,null,null,"C","E",null,null,"F","H"};
-		BinaryTree myTree = new BinaryTree(prelist);
+		BinaryTree<String> myTree = new BinaryTree<String>(prelist);
 		System.out.println(myTree.toString());
 		myTree.postorder();
 		myTree.inorder();

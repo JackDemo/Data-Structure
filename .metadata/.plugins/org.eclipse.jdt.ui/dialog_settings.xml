@@ -94,6 +94,11 @@
 		<item key="antpath" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\javadoc.xml"/>
 		<item key="destdir" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\doc"/>
 		<section name="projects">
+			<section name="AliInterveiw">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Administrator\Desktop\AliInterview\doc"/>
+				<item key="antpath" value="C:\Users\Administrator\Desktop\AliInterview\javadoc.xml"/>
+			</section>
 			<section name="JavaTest">
 				<item key="href" value=""/>
 				<item key="destdir" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\doc"/>
