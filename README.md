@@ -7,3 +7,5 @@
 * BinaryNode 二叉树节点
 * ThreadBinaryNode 线索二叉树节点
 * ThreadBinaryTree 线索二叉树（中序遍历）
+* Huffmantree 哈夫曼树（使用静态三叉链表实现）
+* TriElement 静态三叉链表类
