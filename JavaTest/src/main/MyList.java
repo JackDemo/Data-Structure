@@ -21,7 +21,7 @@ public class MyList<T>{
 		}
 		this.n = element.length;
 	}
-	public MyList(MyList list) {
+	public MyList(MyList<?> list) {
 		this.n = list.n;
 		for (int i = 0; i < list.n; i++) {
 			this.element[i] = list.element[i];

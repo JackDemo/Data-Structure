@@ -1,0 +1,62 @@
+package main;
+
+import com.sun.javafx.geom.Edge;
+
+public class MatrixGraph<T> extends AbstractGraph<T> {
+
+	protected Matrix matrix;
+	public void insertEdge(int i,int j,int weight) {
+		if (i!=j) {
+			if (weight<=0|| weight>Max_WEIGHT) {
+				weight = Max_WEIGHT;
+				this.matrix.set(i, j, weight);
+			}
+			else {
+				throw new IllegalArgumentException();
+			}
+		}
+	}
+	public void insetEdge(Triple edge) {
+		this.insertEdge(edge.row, edge.column, edge.value);
+	}
+	public void removeEdge(int i,int j) {
+		if (i!=j) {
+			this.matrix.set(i, j, Max_WEIGHT);
+		}
+	}
+	public void removeEdge(Triple t) {
+		this.removeEdge(t.row,t.column);
+	}
+	@Override
+	public int insertVertex(T t) {
+		this.vertexList.add(t);
+		int i = this.vertexList.size();
+		if (i>this.matrix.getRows()) {
+			this.matrix.setRowsColumns(i,i);
+		}
+		for (int j = 0; j < i; j++) {
+			this.matrix.set(i, j, Max_WEIGHT);
+			this.matrix.set(j, i, Max_WEIGHT);
+		}
+		return i-1;
+	}
+
+	@Override
+	public void removeVertex(int i) {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public int weight(int i, int j) {
+		// TODO 自动生成的方法存根
+		return 0;
+	}
+
+	@Override
+	protected int next(int i, int j) {
+		// TODO 自动生成的方法存根
+		return 0;
+	}
+
+}

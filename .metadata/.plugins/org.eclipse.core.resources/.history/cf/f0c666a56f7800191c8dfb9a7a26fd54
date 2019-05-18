@@ -1,0 +1,12 @@
+package main;
+
+public abstract class AbstractGraph<T> {
+
+	protected static final int Max_WEIGHT = 0x0000ffff;
+	protected 
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

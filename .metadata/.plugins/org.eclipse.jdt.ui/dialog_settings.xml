@@ -6,6 +6,8 @@
 	<item key="TypeHierarchyViewPart.qualifiednames" value="false"/>
 	<item key="TypeHierarchyViewPart.linkeditors" value="false"/>
 	<item key="TypeHierarchyViewPart.orientation" value="3"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib"/>
+	<item key="UserLibraryLoadSaveDialog.size" value="480,578"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -27,7 +29,7 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="3"/>
+		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="JavaBuildConfigurationBlock">
 		<item key="expanded0" value="true"/>
@@ -91,8 +93,8 @@
 		<item key="nonavbar" value="false"/>
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="1.8"/>
-		<item key="antpath" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\javadoc.xml"/>
-		<item key="destdir" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\doc"/>
+		<item key="antpath" value="C:\Users\Administrator\Desktop\AliInterview\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\Administrator\Desktop\AliInterview\doc"/>
 		<section name="projects">
 			<section name="AliInterveiw">
 				<item key="href" value=""/>
@@ -120,6 +122,23 @@
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 		<item key="DIALOG_WIDTH" value="516"/>
 		<item key="DIALOG_HEIGHT" value="728"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="1"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item key="DIALOG_X_ORIGIN" value="383"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="616"/>
+		<item key="DIALOG_HEIGHT" value="609"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.wizards.buildpaths.NewVariableEntryDialog">
+		<item key="DIALOG_X_ORIGIN" value="114"/>
+		<item key="DIALOG_Y_ORIGIN" value="71"/>
+		<item key="DIALOG_WIDTH" value="577"/>
+		<item key="DIALOG_HEIGHT" value="439"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
 	</section>
 </section>
