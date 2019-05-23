@@ -103,8 +103,8 @@
 			</section>
 			<section name="JavaTest">
 				<item key="href" value=""/>
-				<item key="destdir" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\doc"/>
-				<item key="antpath" value="C:\Users\Administrator\Desktop\JavaTest\JavaTest\javadoc.xml"/>
+				<item key="destdir" value="C:\Users\Administrator\Desktop\AliInterview\doc"/>
+				<item key="antpath" value="C:\Users\Administrator\Desktop\AliInterview\javadoc.xml"/>
 			</section>
 		</section>
 	</section>
@@ -140,5 +140,8 @@
 		<item key="DIALOG_WIDTH" value="577"/>
 		<item key="DIALOG_HEIGHT" value="439"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
 	</section>
 </section>
