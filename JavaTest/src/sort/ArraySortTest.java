@@ -2,6 +2,8 @@ package sort;
 
 import java.util.Random;
 
+import sun.net.www.content.audio.x_aiff;
+
 /**
  * 数组排序算法实现类
  * @author JackDemo
@@ -167,8 +169,69 @@ public class ArraySortTest {
 		}
 		keys[parent]=value;
 	}
+	/**
+	 * 将X中分别以begin1，begin2开始的两个相邻子序列归并（升序）到Y中，子序列长度为n
+	 * 一次归并
+	 * @param X
+	 * @param Y
+	 * @param begin1
+	 * @param begin2
+	 * @param n 子序列长度
+	 */
+	private static void merge(int[] X,int[] Y,int begin1,int begin2,int n) {
+		int i = begin1;
+		int j = begin2;
+		int k = begin1;
+		while (i<begin1+n&&j<begin2+n&&j<X.length) {
+			if (X[i]<X[j]) {
+				Y[k++] = X[i];
+				i++;
+			}else {
+				Y[k++] = X[j];
+				j++;
+			}
+		}
+		while (i<begin1+n&&i<X.length) {
+			Y[k++] = X[i++];
+		}
+		while (j<begin2+n&&j<X.length) {
+			Y[k++] = X[j++];
+		}
+	}
+	/**
+	 * 一趟归并
+	 * @param X
+	 * @param Y
+	 * @param n
+	 */
+	private static void mergepass(int X[],int Y[],int n) {
+		System.out.println(n);
+		for (int i = 0; i < X.length; i+=2*n) {
+			merge(X, Y, i, i+n, n);
+		}
+		print(Y);
+	}
+	/**
+	 * 归并排序算法排序 时间复杂度O(nlog2(n))  空间复杂度O(n)
+	 * 该排序算法稳定
+	 * @param X 排序序列
+	 */
+	public static void mergeSort(int[] X) {
+		int[] Y = new int[X.length];
+		int n = 1;
+		while (n<X.length) {
+			mergepass(X, Y, n);
+			n*=2;
+			if (n<X.length) {
+				mergepass(Y, X, n);
+				n*=2;
+			}
+		}
+		//print(X);
+	}
 	public static void main(String[] args) {
 		int[] start = {81,49,19,38,97,76,13,19};
+		int[] startDemo = {81,49,19,38,97,76,13,19};
 		print(start);
 		insertSort(start);
 		shellSort(start);
@@ -177,7 +240,10 @@ public class ArraySortTest {
 		print(start);
 		selectSort(start);
 		heapSort(start, true);
-		print(start);
+		print(startDemo);
+		System.out.println();
+		mergeSort(startDemo);
+		//print(startDemo);
 		
 	}
 }

@@ -53,4 +53,5 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="sort.ArraySortTest"/>
+<fullyQualifiedTypeName name="sun.net.www.content.audio.x_aiff"/>
 </qualifiedTypeNameHistroy>
