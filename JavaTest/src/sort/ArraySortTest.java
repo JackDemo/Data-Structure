@@ -204,12 +204,13 @@ public class ArraySortTest {
 	 * @param Y
 	 * @param n
 	 */
-	private static void mergepass(int X[],int Y[],int n) {
-		System.out.println(n);
+	private static int[] mergepass(int X[],int Y[],int n) {
+		//System.out.println(n);
 		for (int i = 0; i < X.length; i+=2*n) {
 			merge(X, Y, i, i+n, n);
 		}
-		print(Y);
+		//print(Y);
+		return Y;
 	}
 	/**
 	 * ¹é²¢ÅÅÐòËã·¨ÅÅÐò Ê±¼ä¸´ÔÓ¶ÈO(nlog2(n))  ¿Õ¼ä¸´ÔÓ¶ÈO(n)
@@ -217,30 +218,31 @@ public class ArraySortTest {
 	 * @param X ÅÅÐòÐòÁÐ
 	 */
 	public static void mergeSort(int[] X) {
+		int[] result = new int[X.length];
 		int[] Y = new int[X.length];
 		int n = 1;
 		while (n<X.length) {
-			mergepass(X, Y, n);
+			result = mergepass(X, Y, n);
 			n*=2;
 			if (n<X.length) {
-				mergepass(Y, X, n);
+				result = mergepass(Y, X, n);
 				n*=2;
 			}
 		}
-		//print(X);
+		print(result);
 	}
 	public static void main(String[] args) {
 		int[] start = {81,49,19,38,97,76,13,19};
 		int[] startDemo = {81,49,19,38,97,76,13,19};
-		print(start);
-		insertSort(start);
-		shellSort(start);
-		bubbleSort(start, true);
-		quickSort(start, 0, start.length-1);
-		print(start);
-		selectSort(start);
-		heapSort(start, true);
-		print(startDemo);
+//		print(start);
+//		insertSort(start);
+//		shellSort(start);
+//		bubbleSort(start, true);
+//		quickSort(start, 0, start.length-1);
+//		print(start);
+//		selectSort(start);
+//		heapSort(start, true);
+//		print(startDemo);
 		System.out.println();
 		mergeSort(startDemo);
 		//print(startDemo);

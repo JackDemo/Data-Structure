@@ -1,0 +1,3 @@
+nums = [1,"zmk",5.89]
+for num in nums:
+    print(str(num))

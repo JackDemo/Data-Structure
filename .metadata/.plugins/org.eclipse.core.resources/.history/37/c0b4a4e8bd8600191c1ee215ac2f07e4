@@ -1,0 +1,9 @@
+print("hello world")
+print(2+6)
+print(2*4)
+print(16/2)
+print(9-1)
+ZiMu = ["1","2","3"]
+print("zmk"+ZiMu[0])
+ZiMu.append("4")
+print(ZiMu[3])
